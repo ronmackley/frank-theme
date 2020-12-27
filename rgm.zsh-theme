@@ -21,7 +21,7 @@ ZSH_THEME_GIT_PROMPT_SEPARATOR=':'
 
 # Include date, optional git state, optional return of last command, user@host, root or mortal, parser status
 PROMPT='$fg[blue]>%B%D{%C%y-%m-%dT%H:%M:%S}%b$fg[red]$(git_prompt_status)$fg[red]%B%(?..>%?)%b$fg[white]>%B%n@%m:%~%(!.#.$)%b %_$reset_color'
-PROMPT='$fg[blue]>%D{%C%y-%m-%dT%H:%M:%S%Z}$(git_prompt_status)$fg[red]%(?..>%?)$fg[green]>%n@%m:%~%(!.#.$) %_$reset_color'
+PROMPT='%{$fg[blue]%}>%D{%C%y-%m-%dT%H:%M:%S%Z}$(git_prompt_status)%{$fg[red]%}%(?..>%?)%{$fg[green]%}>%n@%m:%~%(!.#.$) %_%{$reset_color%}'
 
 #
 # RVM component of prompt
