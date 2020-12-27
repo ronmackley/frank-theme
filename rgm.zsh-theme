@@ -5,7 +5,7 @@
 git_prompt_status() {
   local cb=$(git_current_branch)
   if [ -n "$cb" ]; then
-    echo "$fg[magenta]>$(git_super_status)"
+    echo "%{$fg[magenta]%}>$(git_super_status)"
   fi
 
 }
